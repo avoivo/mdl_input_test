@@ -1,1 +1,13 @@
 <h1>My First Angular 2 App</h1>
+
+
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+  <input mdlUpgrade [(ngModel)]="first" required class="mdl-textfield__input" type="text" id="first">
+  <label class="mdl-textfield__label" for="first">First...</label>
+</div>
+
+
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+  <input mdlUpgrade [(ngModel)]="second" [ngFormControl]="secondControl" class="mdl-textfield__input" type="text" id="second">
+  <label class="mdl-textfield__label" for="second">Second...</label>
+</div>

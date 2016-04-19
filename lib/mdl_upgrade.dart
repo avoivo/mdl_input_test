@@ -1,6 +1,5 @@
 part of app;
 
-
 @Directive(
   selector: '[mdlUpgrade]'
 )
