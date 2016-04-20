@@ -2,12 +2,18 @@
 
 
 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-  <input mdlUpgrade [(ngModel)]="first" required class="mdl-textfield__input" type="text" id="first">
+  <input mdlInput [(ngModel)]="first" required class="mdl-textfield__input" type="text" id="first">
   <label class="mdl-textfield__label" for="first">First...</label>
 </div>
 
 
 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-  <input mdlUpgrade [(ngModel)]="second" [ngFormControl]="secondControl" class="mdl-textfield__input" type="text" id="second">
+  <input mdlInput [(ngModel)]="second" [ngFormControl]="secondControl" class="mdl-textfield__input" type="text" id="second">
   <label class="mdl-textfield__label" for="second">Second...</label>
+</div>
+
+
+<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+  <input mdlInput [(ngModel)]="third" [ngFormControl]="thirdControl" class="mdl-textfield__input" type="text" id="third">
+  <label class="mdl-textfield__label" for="second">third...</label>
 </div>

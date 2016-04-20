@@ -11,14 +11,19 @@ part 'mdl_upgrade.dart';
 @Component(
   selector: 'my-app',
   templateUrl: 'app_component.html',
-  directives: const [MdlUpgradeDirective, FORM_DIRECTIVES]
+  directives: const [MdlUpgradeDirective, MdlInputDirective, FORM_DIRECTIVES]
 )
 class AppComponent {
   String first;
 
   String second;
   Control secondControl;
+
+  String third;
+  Control thirdControl;
+
   AppComponent(){
     secondControl = new Control(null, Validators.required);
+    thirdControl = new Control(null);
   }
 }
